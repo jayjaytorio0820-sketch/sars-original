@@ -32,4 +32,4 @@ Import ang repo sa Vercel → Framework Preset: **Other** → walang build comma
 - Sars' Sip price at bottle size (350ML sa photo vs 250ML sa mango poster)
 - Pcs ng "Puto Flan & Cheesy Classic" bundle (menu: 15 pcs, 2 containers)
 - Messenger link `m.me/sarsph` — i-confirm
-- Kapag may custom domain na: gawing absolute URL ang `og:image` at JSON-LD `image`
+- Kapag may custom domain na: palitan ang `sars-original.vercel.app` sa og:url, og:image, canonical at JSON-LD
