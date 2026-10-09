@@ -85,28 +85,11 @@
       </div>
     </section>
 
-    <!-- ============ ABOUT ============ -->
-    <section class="about" id="about">
-      <div class="wrap about-inner">
-        <img class="about-mascot" src="assets/images/logo/icon-512.png" alt="The Sars baker mascot, winking, in a red bandana" width="512" height="512" loading="lazy">
-        <div class="about-copy">
-          <h2>Puto made for sharing</h2>
-          <p>Sars is a modern Filipino comfort pastry kitchen. Our signature is the small-bite puto cake: soft, a little cheesy, and sized so everyone at the table gets one more.</p>
-          <p>We think the best part of merienda isn't the food. It's the moment around it.</p>
-          <ul class="moments">
-            <li><strong>Morning moments.</strong> A quiet coffee and a few bites before the day starts.</li>
-            <li><strong>Sharing.</strong> A bilao in the middle, hands reaching in from every side.</li>
-            <li><strong>Small wins.</strong> A breaktime treat for finishing the hard part.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
     <!-- ============ MENU / PRODUCTS ============ -->
-    <section class="menu" id="menu">
+    <section class="menu patterned" id="menu">
       <div class="wrap">
         <header class="section-head">
-          <h2>The menu</h2>
+          <h2>The Menu</h2>
           <p>Every pack comes ready to share. Add a Sars' Dip to any order.</p>
         </header>
 
@@ -119,29 +102,45 @@
               <li><span class="item">Cheesy Classic <small>regular, 5 pcs</small></span><span class="dots" aria-hidden="true"></span><span class="price">₱60</span></li>
               <li><span class="item">Flan Puto Classic <small>5 pcs</small></span><span class="dots" aria-hidden="true"></span><span class="price">₱65</span></li>
             </ul>
-            <div class="dips">
-              <p class="dips-title"><span class="script">Sars' Dip</span> 1 oz cup, ₱10 each</p>
-              <ul class="dip-swatches">
-                <li><span class="swatch" style="--c:#f2b33d"></span>Golden Yema</li>
-                <li><span class="swatch" style="--c:#4a2416"></span>Choco</li>
-                <li><span class="swatch" style="--c:#f4ead2"></span>Sweet Milk</li>
+
+            <!-- Sars' Dip add-on banner -->
+            <div class="dip-banner">
+              <div class="dip-title">
+                <span class="dip-eyebrow">Add-ons</span>
+                <span class="dip-name">Sars' Dip</span>
+                <span class="dip-size">1 oz.</span>
+              </div>
+              <span class="dip-price" aria-label="10 pesos each">₱10</span>
+              <ul class="dip-cups">
+                <li>
+                  <picture><source srcset="assets/images/menu/dip-milk.webp" type="image/webp"><img src="assets/images/menu/dip-milk.png" alt="" width="300" height="330" loading="lazy"></picture>
+                  <span>Sweet Milk</span>
+                </li>
+                <li>
+                  <picture><source srcset="assets/images/menu/dip-choco.webp" type="image/webp"><img src="assets/images/menu/dip-choco.png" alt="" width="300" height="330" loading="lazy"></picture>
+                  <span>Choco</span>
+                </li>
+                <li>
+                  <picture><source srcset="assets/images/menu/dip-yema.webp" type="image/webp"><img src="assets/images/menu/dip-yema.png" alt="" width="300" height="330" loading="lazy"></picture>
+                  <span>Golden Yema</span>
+                </li>
               </ul>
             </div>
           </div>
-          <figure class="menu-photo tilt-left">
-            <picture>
-              <source srcset="assets/images/services/cheesy-classic-packs.webp" type="image/webp">
-              <img src="assets/images/services/cheesy-classic-packs.jpg" alt="Cheesy Classic puto in clear Sars packs on a wooden tray" width="1000" height="1333" loading="lazy">
-            </picture>
-          </figure>
+
+          <div class="circle-cluster">
+            <picture class="circle c1"><source srcset="assets/images/menu/circle-cheesy-bites.webp" type="image/webp"><img src="assets/images/menu/circle-cheesy-bites.png" alt="Cheesy Bites mini puto in a clear Sars pack" width="571" height="571" loading="lazy"></picture>
+            <picture class="circle c2"><source srcset="assets/images/menu/circle-cheesy-classic.webp" type="image/webp"><img src="assets/images/menu/circle-cheesy-classic.png" alt="Cheesy Classic puto on a wooden tray" width="560" height="560" loading="lazy"></picture>
+            <picture class="circle c3"><source srcset="assets/images/menu/circle-flan-puto.webp" type="image/webp"><img src="assets/images/menu/circle-flan-puto.png" alt="Flan Puto Classic on a wooden tray" width="558" height="558" loading="lazy"></picture>
+          </div>
         </div>
 
         <!-- Pre-order bundles -->
         <div class="menu-block preorder">
-          <figure class="menu-photo tilt-right">
+          <figure class="menu-photo">
             <picture>
-              <source srcset="assets/images/services/bundles-flan-cheesy.webp" type="image/webp">
-              <img src="assets/images/services/bundles-flan-cheesy.jpg" alt="Flan Puto bundle and Cheesy Classic bundle in foil containers" width="1000" height="1000" loading="lazy">
+              <source srcset="assets/images/services/sars-posting.webp" type="image/webp">
+              <img src="assets/images/services/sars-posting.jpg" alt="Sars Flan Puto bundles in foil containers, a bilao, and small clear packs" width="585" height="730" loading="lazy">
             </picture>
           </figure>
           <div class="menu-list">
@@ -164,11 +163,13 @@
           </div>
         </div>
 
-        <!-- Also from Sars -->
+        <p class="printed-menus">Prefer the printed menu? See the <a href="assets/images/gallery/menu-regular.jpg" target="_blank" rel="noopener">Everyday menu</a> or the <a href="assets/images/gallery/menu-preorder.jpg" target="_blank" rel="noopener">Bundle and Bilao menu</a>.</p>
+
+        <!-- Other Merienda -->
         <div class="also">
-          <h3>Also from Sars</h3>
+          <h3>Other Merienda</h3>
           <div class="also-grid">
-            <article class="feature maja">
+            <article class="feature">
               <picture>
                 <source srcset="assets/images/services/sars-maja.webp" type="image/webp">
                 <img src="assets/images/services/sars-maja.jpg" alt="Sars Maja, maja blanca with corn and cheese, in a clear tub" width="1000" height="1250" loading="lazy">
@@ -178,27 +179,84 @@
                 <p>Creamy maja blanca made with real coconut milk and sweet corn, topped with cheese. No preservatives added.</p>
               </div>
             </article>
-            <article class="feature sip">
-              <div class="bottles">
-                <picture>
-                  <source srcset="assets/images/services/sars-sip-mango.webp" type="image/webp">
-                  <img src="assets/images/services/sars-sip-mango.jpg" alt="Sars' Sip mango tapioca drink bottle" width="1000" height="1326" loading="lazy">
-                </picture>
-                <picture>
-                  <source srcset="assets/images/services/sars-sip-avocado.webp" type="image/webp">
-                  <img src="assets/images/services/sars-sip-avocado.jpg" alt="Sars' Sip avocado tapioca drink bottle" width="1000" height="1333" loading="lazy">
-                </picture>
-              </div>
+            <article class="feature">
+              <picture>
+                <source srcset="assets/images/services/sars-sip-mango.webp" type="image/webp">
+                <img src="assets/images/services/sars-sip-mango.jpg" alt="Sars' Sip Mango tapioca drink bottle" width="1000" height="1326" loading="lazy">
+              </picture>
               <div class="feature-copy">
                 <!-- PLACEHOLDER: Sars' Sip price and bottle size (photo 350ML vs mango poster 250ML) -->
-                <h4>Sars' Sip <span class="price-tag tbd" data-placeholder="price">Ask for price</span></h4>
-                <p>Mango and Avocado tapioca drinks with real fruit bits. 350 ml. Shake well and serve chilled.</p>
+                <h4>Sars' Sip Mango <span class="price-tag tbd" data-placeholder="price">Ask for price</span></h4>
+                <p>Mango tapioca drink with real mango bits. 350 ml. Shake well and serve chilled.</p>
+              </div>
+            </article>
+            <article class="feature">
+              <picture>
+                <source srcset="assets/images/services/sars-sip-avocado.webp" type="image/webp">
+                <img src="assets/images/services/sars-sip-avocado.jpg" alt="Sars' Sip Avocado tapioca drink bottle" width="1000" height="1333" loading="lazy">
+              </picture>
+              <div class="feature-copy">
+                <!-- PLACEHOLDER: Sars' Sip price -->
+                <h4>Sars' Sip Avocado <span class="price-tag tbd" data-placeholder="price">Ask for price</span></h4>
+                <p>Avocado tapioca drink with real avocado bits. 350 ml. Shake well and serve chilled.</p>
               </div>
             </article>
           </div>
         </div>
+      </div>
+    </section>
 
-        <p class="printed-menus">Prefer the printed menu? See the <a href="assets/images/gallery/menu-regular.jpg" target="_blank" rel="noopener">everyday menu</a> or the <a href="assets/images/gallery/menu-preorder.jpg" target="_blank" rel="noopener">pre-order menu</a>.</p>
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about">
+      <div class="wrap about-inner">
+        <picture class="about-logo">
+          <source srcset="assets/images/logo/sars-logo.webp" type="image/webp">
+          <img src="assets/images/logo/sars-logo.png" alt="Sars logo with the winking baker mascot" width="640" height="452" loading="lazy">
+        </picture>
+        <div class="about-copy">
+          <h2>Puto made for sharing</h2>
+          <p>Sars is a modern Filipino comfort pastry kitchen. Our signature is the small-bite puto cake: soft, a little cheesy, and sized so everyone at the table gets one more.</p>
+          <p>We think the best part of merienda isn't the food. It's the moment around it.</p>
+          <ul class="moments">
+            <li><strong>Morning moments.</strong> A quiet coffee and a few bites before the day starts.</li>
+            <li><strong>Sharing.</strong> A bilao in the middle, hands reaching in from every side.</li>
+            <li><strong>Small wins.</strong> A breaktime treat for finishing the hard part.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SARS'SNAP (stories) ============ -->
+    <section class="snap patterned" id="snap">
+      <div class="wrap">
+        <header class="section-head">
+          <h2>Sars'Snap</h2>
+          <p>Little moments, lovely memories, and stories worth sharing.</p>
+        </header>
+        <div class="snap-grid">
+          <article class="story">
+            <!-- PLACEHOLDER: low-res photo cropped from mockup — replace with original -->
+            <img src="assets/images/snap/snap-popup.jpg" alt="The Sars pop-up stall with menu boards, a Sars' Sip poster, and puto on display" width="402" height="330" loading="lazy">
+            <div class="story-copy">
+              <h3>SARS Goes Pop-Up!</h3>
+              <p class="story-sub">Bringing SARS closer to you, one pop-up at a time!</p>
+              <p>From online orders to meeting you face-to-face, our little pop-up stall lets us share freshly made favorites, exchange smiles, and create sweet memories together.</p>
+              <!-- PLACEHOLDER: link to the full story / FB post -->
+              <a class="read-more" href="https://www.facebook.com/sarsph" target="_blank" rel="noopener">Read more<span class="sr-only"> about SARS Goes Pop-Up</span></a>
+            </div>
+          </article>
+          <article class="story">
+            <!-- PLACEHOLDER: low-res photo cropped from mockup — replace with original -->
+            <img src="assets/images/snap/snap-office.jpg" alt="Hands picking up Sars puto from a clear pack beside a laptop at the office" width="402" height="330" loading="lazy">
+            <div class="story-copy">
+              <h3>Sars at the Office</h3>
+              <p class="story-sub">Making workdays a little sweeter!</p>
+              <p>Busy deadlines? Take a little break! Whether it's your morning coffee or afternoon merienda, SARS brings a taste of home to your workday.</p>
+              <!-- PLACEHOLDER: link to the full story / FB post -->
+              <a class="read-more" href="https://www.facebook.com/sarsph" target="_blank" rel="noopener">Read more<span class="sr-only"> about Sars at the Office</span></a>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 

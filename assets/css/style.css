@@ -158,7 +158,7 @@ p { margin: 0 0 1em; }
 /* ---------- About ---------- */
 .about { background: var(--paper); padding: clamp(64px, 9vw, 120px) 0; }
 .about-inner { display: grid; gap: 32px; align-items: start; }
-.about-mascot { width: 132px; height: 132px; }
+.about-logo img { width: 200px; }
 .about-copy { max-width: 62ch; }
 .about-copy > p:first-of-type { font-size: 1.12rem; }
 .about-copy > p:nth-of-type(2) {
@@ -174,22 +174,33 @@ p { margin: 0 0 1em; }
 }
 .moments strong { color: var(--maroon); font-weight: 600; }
 @media (min-width: 760px) {
-  .about-inner { grid-template-columns: 200px 1fr; gap: 56px; }
-  .about-mascot { width: 200px; height: 200px; position: sticky; top: 110px; }
+  .about-inner { grid-template-columns: 240px 1fr; gap: 64px; }
+  .about-logo img { width: 240px; }
+  .about-inner { align-items: center; }
 }
 
 /* ---------- Menu ---------- */
-.menu {
-  position: relative; padding: clamp(72px, 10vw, 130px) 0;
-  /* line-art puto pattern (brand rule: line-art, 1 color) */
-  background-color: var(--cream);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180' fill='none' stroke='%233f0204' stroke-opacity='.07' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M22 58c0-14 11-24 24-24s24 10 24 24'/%3E%3Cpath d='M18 58h56l-4 16H22z'/%3E%3Cpath d='M42 40l6 12'/%3E%3Cellipse cx='128' cy='126' rx='26' ry='9'/%3E%3Cpath d='M102 126v14c0 5 12 9 26 9s26-4 26-9v-14'/%3E%3Ccircle cx='138' cy='42' r='14'/%3E%3Cpath d='M131 36l12 12'/%3E%3Cpath d='M40 140c6-8 18-8 24 0'/%3E%3C/svg%3E");
-  background-size: 180px;
-}
-.section-head { max-width: 640px; margin-bottom: clamp(40px, 6vw, 72px); }
-.section-head p { font-size: 1.08rem; color: var(--ink-soft); }
+.menu { position: relative; padding: clamp(72px, 10vw, 130px) 0; }
 
-.menu-block { display: grid; gap: 36px; align-items: center; margin-bottom: clamp(64px, 9vw, 110px); }
+/* Pastry line-art bands (top + bottom), plain cream in the middle — from the client's background */
+.patterned {
+  background-color: var(--cream);
+  background-image: url("../images/pattern-pastry.png"), url("../images/pattern-pastry.png");
+  background-repeat: repeat-x, repeat-x;
+  background-position: center top, center bottom;
+  background-size: auto 220px, auto 220px;
+}
+.patterned::before, .patterned::after {
+  content: ""; position: absolute; left: 0; right: 0; height: 220px; pointer-events: none;
+}
+.patterned::before { top: 0; background: linear-gradient(to bottom, rgba(255, 247, 230, 0) 30%, var(--cream)); }
+.patterned::after { bottom: 0; background: linear-gradient(to top, rgba(255, 247, 230, 0) 30%, var(--cream)); }
+.patterned > .wrap { position: relative; z-index: 1; }
+.section-head { max-width: 640px; margin-bottom: clamp(40px, 6vw, 72px); }
+.section-head p { font-size: 1.08rem; color: var(--ink-soft); padding-bottom: 22px; border-bottom: 1.5px solid var(--line); }
+
+.menu-block { display: grid; gap: 40px; align-items: center; margin-bottom: clamp(56px, 8vw, 96px); }
+.menu-block.preorder { margin-bottom: 28px; }
 .menu-list h3 { margin-bottom: .6em; }
 .menu-list h4 { font-family: var(--f-body); font-size: .95rem; font-weight: 600; color: var(--wine); margin: 1.6em 0 .2em; letter-spacing: .01em; }
 
@@ -209,21 +220,44 @@ p { margin: 0 0 1em; }
   font-variant-numeric: tabular-nums;
 }
 
-.dips {
-  margin-top: 28px; padding: 18px 20px;
-  border: 1.5px dashed rgba(163, 9, 14, .4); border-radius: var(--radius);
-  background: rgba(255, 255, 255, .5);
+/* Sars' Dip banner */
+.dip-banner {
+  margin-top: 32px; position: relative; overflow: hidden;
+  display: grid; grid-template-columns: auto auto 1fr; align-items: center; gap: 14px 18px;
+  background: #7f0e12; color: var(--cream);
+  border-radius: 18px; padding: 18px 18px 14px 24px;
+  box-shadow: 0 18px 36px -24px rgba(63, 2, 4, .7);
 }
-.dips-title { margin: 0 0 10px; color: var(--ink-soft); }
-.dips-title .script { font-size: 1.6rem; color: var(--wine); margin-right: 6px; }
-.dip-swatches { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px 20px; font-weight: 500; font-size: .95rem; }
-.dip-swatches li { display: flex; align-items: center; gap: 8px; }
-.swatch { width: 18px; height: 18px; border-radius: 50%; background: var(--c); box-shadow: inset 0 0 0 1.5px rgba(63, 2, 4, .25); }
+.dip-title { display: flex; flex-direction: column; line-height: 1; }
+.dip-eyebrow { font: 600 .82rem/1 var(--f-body); color: rgba(255, 247, 230, .85); margin-bottom: 4px; }
+.dip-name { font: 600 clamp(1.6rem, 3vw, 2.1rem)/1 var(--f-head); color: var(--cream); white-space: nowrap; }
+.dip-size { font: italic 500 .8rem/1 var(--f-body); color: rgba(255, 247, 230, .8); align-self: flex-end; margin-top: 4px; }
+.dip-price {
+  width: 64px; height: 64px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--cream); color: var(--wine); font: 700 1.35rem/1 var(--f-body);
+  box-shadow: 0 0 0 4px rgba(255, 247, 230, .25);
+}
+.dip-cups { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+.dip-cups li { display: flex; flex-direction: column; align-items: center; text-align: center; }
+.dip-cups img { width: 100%; max-width: 92px; height: auto; }
+.dip-cups span { font-size: .74rem; font-weight: 500; color: rgba(255, 247, 230, .85); margin-top: -2px; }
+@media (max-width: 520px) {
+  .dip-banner { grid-template-columns: auto 1fr; padding: 18px; }
+  .dip-price { justify-self: end; }
+  .dip-cups { grid-column: 1 / -1; }
+}
+
+/* Three circle photos */
+.circle-cluster { position: relative; width: min(100%, 460px); aspect-ratio: 1 / 1.02; justify-self: center; }
+.circle { position: absolute; width: 56%; aspect-ratio: 1; border-radius: 50%; overflow: hidden;
+  box-shadow: 0 0 0 5px var(--wine), 0 22px 40px -22px rgba(63, 2, 4, .6); background: #fff; }
+.circle img { width: 100%; height: 100%; object-fit: cover; }
+.circle.c1 { top: 0; left: 0; }
+.circle.c2 { top: 22%; right: 0; width: 50%; }
+.circle.c3 { bottom: 0; left: 10%; width: 48%; }
 
 .menu-photo { margin: 0; border-radius: 18px; overflow: hidden; box-shadow: 0 24px 50px -28px rgba(63, 2, 4, .55); background: #fff; }
 .menu-photo img { width: 100%; aspect-ratio: 4 / 4.6; object-fit: cover; }
-.menu-photo.tilt-left { transform: rotate(-2deg); }
-.menu-photo.tilt-right { transform: rotate(2deg); }
 
 /* Pre-order block sits on a wine panel: the "special order" moment */
 .menu-block.preorder { background: var(--wine); color: var(--cream); border-radius: 24px; padding: clamp(28px, 5vw, 56px); }
@@ -243,23 +277,32 @@ p { margin: 0 0 1em; }
   .menu-photo { max-width: 460px; justify-self: center; }
 }
 
-/* Also from Sars */
+/* Other Merienda */
+.also { margin-top: clamp(56px, 8vw, 96px); }
 .also > h3 { margin-bottom: 1em; }
-.also-grid { display: grid; gap: 28px; }
-.feature { background: #fff; border-radius: 20px; overflow: hidden; display: grid; box-shadow: 0 1px 0 var(--line); }
-.feature img { width: 100%; object-fit: cover; }
-.feature.maja img { aspect-ratio: 5 / 4; object-position: 50% 45%; }
-.feature-copy { padding: 22px 24px 26px; }
-.feature-copy h4 { font-size: 1.5rem; display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
-.feature-copy p { color: var(--ink-soft); margin: 0; }
-.price-tag { font-family: var(--f-body); font-size: .9rem; font-weight: 600; background: var(--butter); color: var(--maroon); padding: 4px 10px; border-radius: 8px; }
-.bottles { display: grid; grid-template-columns: 1fr 1fr; background: #f2f1ef; }
-.bottles img { aspect-ratio: 3 / 4; object-fit: cover; object-position: 50% 55%; }
-@media (min-width: 860px) {
-  .also-grid { grid-template-columns: 1fr 1fr; }
-  .feature.maja img, .bottles img { aspect-ratio: 4 / 3.6; }
-}
-.printed-menus { margin: 40px 0 0; color: var(--ink-soft); }
+.also-grid { display: grid; gap: 24px; }
+.feature { background: #fff; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 1px 0 var(--line), 0 18px 36px -30px rgba(63, 2, 4, .5); }
+.feature img { width: 100%; aspect-ratio: 4 / 3.4; object-fit: cover; object-position: 50% 50%; background: #f2f1ef; }
+.feature-copy { padding: 18px 20px 22px; }
+.feature-copy h4 { font-size: 1.3rem; display: flex; align-items: center; flex-wrap: wrap; gap: 8px 10px; }
+.feature-copy p { color: var(--ink-soft); margin: 0; font-size: .95rem; }
+.price-tag { font-family: var(--f-body); font-size: .84rem; font-weight: 600; background: var(--butter); color: var(--maroon); padding: 3px 9px; border-radius: 8px; }
+@media (min-width: 640px) { .also-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 960px) { .also-grid { grid-template-columns: repeat(3, 1fr); } }
+.printed-menus { margin: 0; color: var(--ink-soft); font-size: 1.02rem; }
+
+/* ---------- Sars'Snap ---------- */
+.snap { position: relative; padding: clamp(72px, 10vw, 120px) 0; }
+.snap-grid { display: grid; gap: 24px; }
+.story { background: #fff; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 1px 0 var(--line), 0 20px 40px -30px rgba(63, 2, 4, .5); }
+.story img { width: 100%; aspect-ratio: 402 / 330; object-fit: cover; }
+.story-copy { padding: 20px 22px 22px; display: flex; flex-direction: column; flex: 1; }
+.story h3 { margin-bottom: .2em; }
+.story-sub { font-weight: 600; color: var(--maroon); margin-bottom: .6em; }
+.story-copy > p:not(.story-sub) { color: var(--ink-soft); font-size: .95rem; }
+.read-more { align-self: flex-end; margin-top: auto; font-weight: 600; font-size: .95rem; text-decoration: none; }
+.read-more:hover { text-decoration: underline; }
+@media (min-width: 760px) { .snap-grid { grid-template-columns: 1fr 1fr; gap: 32px; } }
 
 /* ---------- Facebook / social ---------- */
 .social { background: var(--paper); padding: clamp(64px, 9vw, 120px) 0; }

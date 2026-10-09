@@ -18,6 +18,9 @@ Source: About_Sars.docx + brand board + menus/posters na binigay ng client.
 - CTAs: Message to order (m.me/sarsph) · Call 0926 046 3011
 - Note: Bundles and bilao are made to order — message at least 2 days ahead.
 
+## Section order
+Hero → The Menu (Everyday, Pre-order, printed menu links, Other Merienda) → Puto made for sharing → Sars'Snap → New batches, new flavors (FB) → How to order → Footer
+
 ## About
 - Puto made for sharing (brand story + 3 content pillars: Morning moments, Sharing, Small wins)
 
@@ -37,9 +40,15 @@ Source: About_Sars.docx + brand board + menus/posters na binigay ng client.
 - Puto Flan Bilao — 50 pcs — ₱650
 - Mix Bilao — 25 Puto Flan + 25 Cheesy Classic — ₱625
 
-### Also from Sars
+### Other Merienda
 - Sars Maja (Maja Blanca) — ₱85 — real coconut milk, sweet corn, cheese, no preservatives
 - Sars' Sip — Mango & Avocado tapioca drink — 350 ml  ⚠️ PRICE TBD · mango poster says 250ML
+
+## Sars'Snap
+- Subtitle: Little moments, lovely memories, and stories worth sharing.
+- SARS Goes Pop-Up! — Bringing SARS closer to you, one pop-up at a time! — From online orders to meeting you face-to-face, our little pop-up stall lets us share freshly made favorites, exchange smiles, and create sweet memories together.
+- Sars at the Office — Making workdays a little sweeter! — Busy deadlines? Take a little break! Whether it's your morning coffee or afternoon merienda, SARS brings a taste of home to your workday.
+- ⚠️ Photos = low-res placeholders; Read more → FB Page muna
 
 ## Contact
 - Phone: 0926 046 3011 (tel:+639260463011)
