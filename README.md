@@ -32,6 +32,5 @@ Import ang repo sa Vercel → Framework Preset: **Other** → walang build comma
 ## Placeholders (hanapin ang `PLACEHOLDER` sa index.html at `.tbd` class)
 - Email address
 - Delivery areas (kung meron) — sa ngayon: "Ask us about delivery"
-- Sars'Snap photos (assets/images/snap/) — upscaled mula sa mockup screenshot; mas maganda pa rin kung original
 - Sars'Snap "Read more" links — FB Page muna; palitan ng link ng mismong post/story
 - Kapag may custom domain na: palitan ang `sars-original.vercel.app` sa og:url, og:image, canonical at JSON-LD

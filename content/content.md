@@ -50,12 +50,12 @@ Hero → The Menu (Everyday, Pre-order, printed menu links, Other Merienda) → 
 - Subtitle: Little moments, lovely memories, and stories worth sharing.
 - SARS Goes Pop-Up! — Bringing SARS closer to you, one pop-up at a time! — From online orders to meeting you face-to-face, our little pop-up stall lets us share freshly made favorites, exchange smiles, and create sweet memories together.
 - Sars at the Office — Making workdays a little sweeter! — Busy deadlines? Take a little break! Whether it's your morning coffee or afternoon merienda, SARS brings a taste of home to your workday.
-- ⚠️ Photos = upscaled mula sa mockup (palitan kung may original); Read more → FB Page muna
+- Photos: original (pop-up stall, office). ⚠️ Read more → FB Page muna
 
 ## Contact
 - Phone: 0926 046 3011 (tel:+639260463011)
 - Messenger: m.me/sarsph (confirmed)
 - Facebook: facebook.com/sarsph
-- Instagram: @sarsph
+- Instagram: @sars_est2020 (instagram.com/sars_est2020)
 - Email: ⚠️ PLACEHOLDER
 - Pickup: Kabulusan II, Caloocan City (delivery: ask via Messenger)
