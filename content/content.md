@@ -35,14 +35,16 @@ Hero → The Menu (Everyday, Pre-order, printed menu links, Other Merienda) → 
 - Puto Flan — 15 pcs (1 container) — ₱205
 - Cheesy Classic — 15 pcs (1 container) — ₱200
 - Cheesy Bites — 50 pcs (1 container) — ₱255
-- Puto Flan & Cheesy Classic — 2 containers — ₱400  ⚠️ CONFIRM pcs (menu says 15 pcs)
+- Puto Flan & Cheesy Classic — 30 pcs, 2 containers — ₱400
 - Cheesy Classic Bilao — 50 pcs — ₱600
 - Puto Flan Bilao — 50 pcs — ₱650
 - Mix Bilao — 25 Puto Flan + 25 Cheesy Classic — ₱625
 
 ### Other Merienda
 - Sars Maja (Maja Blanca) — ₱85 — real coconut milk, sweet corn, cheese, no preservatives
-- Sars' Sip — Mango & Avocado tapioca drink — 350 ml  ⚠️ PRICE TBD · mango poster says 250ML
+- Sars' Sip Mango — 350 ml — ₱85
+- Sars' Sip Avocado — 350 ml — ₱95
+- (350 ml lang ang available)
 
 ## Sars'Snap
 - Subtitle: Little moments, lovely memories, and stories worth sharing.
@@ -52,8 +54,8 @@ Hero → The Menu (Everyday, Pre-order, printed menu links, Other Merienda) → 
 
 ## Contact
 - Phone: 0926 046 3011 (tel:+639260463011)
-- Messenger: m.me/sarsph  ⚠️ CONFIRM
+- Messenger: m.me/sarsph (confirmed)
 - Facebook: facebook.com/sarsph
 - Instagram: @sarsph
 - Email: ⚠️ PLACEHOLDER
-- Address / service area: ⚠️ PLACEHOLDER
+- Pickup: Kabulusan II, Caloocan City (delivery: ask via Messenger)
