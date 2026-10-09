@@ -35,6 +35,6 @@ Import ang repo sa Vercel → Framework Preset: **Other** → walang build comma
 - Sars' Sip price at bottle size (350ML sa photo vs 250ML sa mango poster)
 - Pcs ng "Puto Flan & Cheesy Classic" bundle (menu: 15 pcs, 2 containers)
 - Messenger link `m.me/sarsph` — i-confirm
-- Sars'Snap photos (assets/images/snap/) — low-res crop mula sa mockup; palitan ng original
+- Sars'Snap photos (assets/images/snap/) — upscaled mula sa mockup screenshot; mas maganda pa rin kung original
 - Sars'Snap "Read more" links — FB Page muna; palitan ng link ng mismong post/story
 - Kapag may custom domain na: palitan ang `sars-original.vercel.app` sa og:url, og:image, canonical at JSON-LD
